@@ -2,6 +2,10 @@
 
 This project is a working demonstration of a "concurrency shaper" or "rate limiter" built in Go that sits in front of a Supabase database.
 
+## 🚀 Live Demo
+
+You can try out the live application here: **[https://bouncer-2r9n.onrender.com](https://bouncer-2r9n.onrender.com)**
+
 It solves the "noisy neighbor" problem. Imagine living in an apartment with shared Wi-Fi. If one person starts downloading huge files, it slows down the internet for everyone else. This project acts like a smart router that gives each user a fair "bandwidth budget," ensuring the system remains fast and reliable for all tenants.
 
 ## How It Works
@@ -22,6 +26,12 @@ The flow is simple: The **Frontend** talks to the **Go Backend**, which then tal
 * **"Free Tier"**: Has a stricter limit, allowing fewer requests in a short period.
 * **"Pro Tier"**: Has a more generous limit, allowing for much more traffic.
 * **Real-time Feedback**: The frontend immediately shows if a request was successful or if it was rate-limited.
+
+## 📸 Screenshot
+
+*A preview of the Bouncer Glassmorphism UI in action.*
+
+![Bouncer UI](https://i.imgur.com/T0b6G7N.png)
 
 ---
 
