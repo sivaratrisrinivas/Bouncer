@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"github.com/jackc/pgx/v5"
+	"github.com/joho/godotenv"
 )
 
 // The TokenBucket struct and Take() method are the same as before.
@@ -98,6 +99,13 @@ func queryHandler(db_conn *pgx.Conn) http.HandlerFunc {
 }
 
 func main() {
+	// Load .env file for local development.
+	// This will be ignored in a production environment like Render.
+	err := godotenv.Load()
+	if err != nil {
+		log.Println("No .env file found, using environment variables")
+	}
+
 	connStr := os.Getenv("DATABASE_URL")
 	if connStr == "" {
 		log.Fatal("DATABASE_URL environment variable is not set. Please provide your Supabase connection string.")
