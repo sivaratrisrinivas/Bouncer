@@ -31,7 +31,8 @@ The flow is simple: The **Frontend** talks to the **Go Backend**, which then tal
 
 *A preview of the Bouncer Glassmorphism UI in action.*
 
-![Drag your screenshot here to upload](https://via.placeholder.com/800x500/667eea/ffffff?text=Drag+Your+Screenshot+File+Here)
+![image](https://github.com/user-attachments/assets/3659dd3b-6586-4fd6-9b32-473da3e6a861)
+
 
 ---
 
