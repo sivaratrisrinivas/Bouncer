@@ -42,7 +42,7 @@ func (tb *TokenBucket) Take() bool {
 
 var tenantBuckets = map[string]*TokenBucket{
 	"free-tier": {
-		capacity: 10, tokens: 10, refillRate: time.Second * 1, lastRefillTime: time.Now(),
+		capacity: 10, tokens: 10, refillRate: time.Second * 15, lastRefillTime: time.Now(),
 	},
 	"pro-tier": {
 		capacity: 50, tokens: 50, refillRate: time.Millisecond * 200, lastRefillTime: time.Now(),
